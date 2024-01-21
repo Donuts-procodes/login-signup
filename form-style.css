@@ -1,0 +1,179 @@
+body {
+  display: flex;
+  height: 100%;
+  background: linear-gradient(90deg, #134bce 50%, #ffffff 50%);
+}
+.left-side {
+  background-color: #134bce;
+  width: 50%;
+  height: 625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  border-radius: 40px;
+  justify-content: center;
+  box-shadow: 2px 2px 10px black;
+}
+.login-head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium";
+  letter-spacing: 3px;
+}
+.dashed-inside {
+  border: 3px dashed #134bce;
+  width: 280px;
+  height: 320px;
+  border-radius: 25px;
+  margin-left: 32px;
+  justify-content: center;
+}
+
+.email-sec,
+.password-sec {
+  display: flex;
+  margin-left: 25px;
+}
+.envelope {
+  background-color: yellow;
+  height: 35px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+  margin-top: 25px;
+  border: 2px solid yellow;
+}
+.fa.fa-envelope {
+  display: flex;
+  align-self: center;
+  font-size: 15px;
+}
+.fa.fa-key {
+  display: flex;
+  align-self: center;
+  font-size: 15px;
+}
+.email-one {
+  height: 33px;
+  display: flex;
+  background-color: #13ce66;
+  border: none;
+  border-radius: 25px;
+  text-align: left;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 25px;
+  transition: 0.3s;
+  border: 2px solid #13ce66;
+  font-weight: bold;
+  color: #000;
+}
+.email-one:focus {
+  border: 2px solid #13ce66;
+  background-color: #ffffff;
+  outline: none;
+}
+.password-sec {
+  margin-top: -20px;
+}
+.line {
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 200px;
+  height: 2px;
+  background-color: #134bce;
+}
+.confirm {
+  background-color: #13ce66;
+  height: 50px;
+  text-align: center;
+  width: 150px;
+  margin-left: 65px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 2px solid #13ce66;
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium";
+  transition: 0.4s;
+  color: #000;
+}
+.confirm:hover {
+  background-color: #ffffff;
+  color: #13ce66;
+}
+.confirm:active {
+  box-sizing: border-box;
+}
+
+.right-side {
+  width: 50%;
+  height: 625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+.signup-container {
+  width: 350px;
+  height: 450px;
+  background-color: #134bce;
+  border-radius: 40px;
+  justify-content: center;
+  box-shadow: 2px 2px 10px black;
+}
+.signup-head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium";
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+.dashed-inside-one {
+  border: 3px dashed #ffffff;
+  width: 280px;
+  height: 320px;
+  border-radius: 25px;
+  margin-left: 32px;
+  justify-content: center;
+}
+.line-white {
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 200px;
+  height: 2px;
+}
+
+.yellow-circle {
+  height: 70px;
+  aspect-ratio: 1/1;
+  background-color: yellow;
+  float: left;
+  z-index: 1;
+  align-self: center;
+  border-radius: 35px;
+  animation: rotateShape 4s infinite;
+}
+@keyframes rotateShape {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 35px; /* Circle shape */
+  }
+  50% {
+    transform: rotate(90deg);
+    border-radius: 0; /* Square shape */
+  }
+  100% {
+    transform: rotate(180deg);
+    border-radius: 35px; /* Back to circle shape */
+  }
+}
